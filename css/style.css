@@ -1,0 +1,51 @@
+* {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color-: #FFFFFF;
+  --secondary-white-: #f2f3f5;
+  --secondary-blue-: #0563bb;
+}
+/* header start */
+header nav.navbar {
+  z-index: 9999;
+  background-color: var(--secondary-white-);
+}
+
+header nav.navbar .navbar-brand {
+  color: var(--secondary-blue-);
+  font-size: 1.4rem;
+}
+
+header nav.navbar .navbar-nav .nav-item {
+  margin-right: 0.5rem;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link {
+  padding: 0.5rem;
+  color: var(--secondary-blue-);
+  transition: 0.3s;
+}
+
+header nav.navbar .navbar-nav .nav-item .nav-link:hover,
+header nav.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #0D1821;
+}
+
+/* header nav.navbar .navbar-toggler  {
+  color: var(--secondary-blue-);
+  cursor: pointer;
+  z-index: 999;
+  outline: none;
+} */
+.navbar .navbar-toggler span {
+  color: var(--secondary-blue-);
+  font-size: 16px;
+  background-color: transparent;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
