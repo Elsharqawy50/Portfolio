@@ -6,13 +6,17 @@
 }
 
 :root {
-  --primary-color-: #ffffff;
+  --primary-white-: #fbfbff;
   --secondary-white-: #f2f3f5;
   --primary-blue-: #0563bb;
   --primary-black-: #45505b;
 }
 
-/* nav start */
+body {
+  scroll-behavior: smooth;
+}
+
+/* ======= nav start ======= */
 header nav.navbar {
   z-index: 9999;
   background-color: var(--secondary-white-);
@@ -45,12 +49,13 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-/* nav end */
-/* landing start */
+/* Nav End */
+
+/* ======= Landing Section ======= */
 .landing {
   min-height: calc(100vh - 59.61px);
   color: var(--primary-black-);
-  background-color: #fbfbff;
+  background-color: var(--primary-white-);
 }
 
 .landing .social ul {
@@ -92,3 +97,42 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%), 0 6px 20px 0 rgb(0 0 0 / 20%);
   }
 }
+/* Landing End */
+
+/* ======= About Section ======= */
+.about {
+  color: var(--primary-black-);
+  background-color: #f6f6f6;
+}
+
+.about h1 {
+  width: fit-content;
+  color: var(--primary-blue-);
+  border-bottom: 2px solid #45505b4d;
+}
+
+.about .gmail,
+.about p {
+  text-transform: none;
+}
+
+@media (min-width: 1200px) {
+  .about p {
+    width: 78%;
+  }
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  width: fit-content;
+}
+
+@media (max-width: 576px) {
+  .about ul li {
+    width: 100%;
+  }
+}
+/* About End */
