@@ -6,8 +6,9 @@
 }
 
 :root {
+  --primary-gray-: #f2f3f5;
+  --secondry-gray-: #f6f6f6;
   --primary-white-: #fbfbff;
-  --secondary-white-: #f2f3f5;
   --primary-blue-: #0563bb;
   --primary-black-: #45505b;
 }
@@ -19,7 +20,7 @@ body {
 /* ======= nav start ======= */
 header nav.navbar {
   z-index: 9999;
-  background-color: var(--secondary-white-);
+  background-color: var(--primary-gray-);
 }
 
 header nav.navbar .navbar-brand {
@@ -102,7 +103,7 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
 /* ======= About Section ======= */
 .about {
   color: var(--primary-black-);
-  background-color: #f6f6f6;
+  background-color: var(--secondry-gray-);
 }
 
 .about h1 {
@@ -136,3 +137,68 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   }
 }
 /* About End */
+
+/* ======= Skills Section ======= */
+.skills {
+  color: var(--primary-black-);
+  background-color: var(--primary-white-);
+}
+
+.skills h1 {
+  width: fit-content;
+  color: var(--primary-blue-);
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid #45505b4d;
+}
+
+.skills .item-text{
+  margin-top: 1.7rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.skills .item-text span{
+  position: absolute;
+}
+
+.skills .progress{
+  margin-top: 0.7rem;
+  border-radius: 10px;
+  height: 16px;
+  background-color: var(--primary-gray-);
+}
+
+.skills .progress-bar{
+  background: var(--primary-blue-);
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.skills .progress-bar{
+  width: 0%;
+  transition: 0.9s;
+}
+
+.skills .logo {
+  width: 20px;
+}
+
+.skills .logo1 {
+  width: 17px;
+}
+
+.skills a {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--primary-blue-);
+  color:var(--primary-blue-);
+  font-weight: 600;
+  box-shadow: 0px 7px 8px -5px #45505b4d
+}
+
+.skills a:hover {
+  background-color: var(--primary-blue-);
+  color:var(--primary-white-);
+  font-weight: 600;
+}
