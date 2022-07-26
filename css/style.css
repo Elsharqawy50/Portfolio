@@ -202,3 +202,39 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   color:var(--primary-white-);
   font-weight: 600;
 }
+/* Skills End */
+
+/* ======= Projects Section ======= */
+.projects {
+  color: var(--primary-black-);
+  background-color: var(--secondry-gray-);
+}
+
+.projects h1 {
+  width: fit-content;
+  color: var(--primary-blue-);
+  border-bottom: 2px solid #45505b4d;
+}
+
+.projects h4 {
+  color: var(--primary-black-);
+  font-weight: 600;
+}
+
+.projects  .imgCard {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%), 0 4px 8px 0 rgb(0 0 0 / 15%)
+}
+
+.projects  .imgCard img {
+  cursor: pointer;
+  transition: .4s;
+  width: 100%;
+}
+
+.projects  .imgCard img:hover {
+  transform: scale(1.1);
+}
+
+
