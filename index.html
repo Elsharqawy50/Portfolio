@@ -18,11 +18,11 @@
   </head>
   <body>
     <!-- ======= Header Section ======= -->
-    <header>
+    <header class="sticky-top" >
       <!-- nav start -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#">my portfolio</a>
+          <a class="navbar-brand fw-bold" href="#landing">my portfolio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto fw-bold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#landing">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -63,11 +63,11 @@
     <!-- Header End -->
 
     <!-- ======= Landing Section ======= -->
-    <section class="landing d-flex align-items-center">
+    <section class="landing d-flex align-items-center" id="landing">
       <div class="container">
         <div class="row">
           <div
-            class="col-12 col-lg-6 order-2 order-lg-1 mt-5 text-lg-start text-center"
+            class="profile-content col-12 col-lg-6 order-2 order-lg-1 mt-5 text-lg-start text-center"
           >
             <h1 class="pt-5">hello, i'm</h1>
             <h2>abdelrahman mohamed</h2>
@@ -116,7 +116,7 @@
     <!-- ======= Main Section ======= -->
     <main class="main">
       <!-- ======= About Section ======= -->
-      <div class="about py-5" id="about">
+      <section class="about py-5 animate" id="about">
         <div class="container">
           <h1 class="mx-auto pb-2">about</h1>
           <div class="text-center mt-5">
@@ -171,14 +171,14 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- About End -->
 
       <!-- ======= Skills Section ======= -->
-      <div class="skills py-5" id="skills">
+      <section class="skills py-5 animate" id="skills">
         <div class="container">
           <h1 class="mx-auto pb-2">skills</h1>
-          <div class="row mt-4 mt-md-5 justify-content-around">
+          <div class="row mt-4 mt-md-4 justify-content-around">
             <div class="col-md-6 col-lg-5">
               <div class="item">
                 <div
@@ -300,11 +300,11 @@
             <a class="rounded-pill px-3 py-2" href="#">Download CV</a>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Skills End -->
 
       <!-- ======= Projects Section ======= -->
-      <div class="projects py-5" id="projects">
+      <section class="projects py-5 animate" id="projects">
         <div class="container">
           <h1 class="mx-auto pb-2">projects</h1>
           <div class="row">
@@ -349,11 +349,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Projects End -->
 
       <!-- ======= Contact Section ======= -->
-      <div class="contact py-5" id="contact">
+      <section class="contact py-5 animate" id="contact">
         <div class="container">
           <h1 class="mx-auto pb-2">contact me</h1>
           <div class="row">
@@ -443,7 +443,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Contact End -->
     </main>
     <!-- Main End -->

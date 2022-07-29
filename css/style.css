@@ -8,6 +8,7 @@
 :root {
   --primary-gray-: #f2f3f5;
   --primary-white-: #fbfbff;
+  --opacity-white-: #fbfbfff0;
   --secondry-white-: #f5f6fa;
   --primary-blue-: #0563bb;
   --primary-black-: #45505b;
@@ -20,7 +21,8 @@ body {
 /* ======= nav start ======= */
 header nav.navbar {
   z-index: 9999;
-  background-color: var(--primary-gray-);
+  background-color: var(--opacity-white-);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%), 0 -1px 0 0 rgb(0 0 0 / 8%);
 }
 
 header nav.navbar .navbar-brand {
@@ -90,6 +92,7 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   overflow: hidden;
   position: relative;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+  animation: heroAnimate 1.1s ease-in-out forwards;
 }
 
 .landing .profile img {
@@ -97,6 +100,32 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   position: absolute;
   top: 66px;
   right: 20px;
+}
+
+.landing .profile-content {
+  animation: heroContentAnimate 1.1s ease-in-out forwards;
+}
+
+@keyframes heroContentAnimate {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes heroAnimate {
+  from {
+    opacity: 0;
+    transform: translate(-70px, -100px) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
 }
 
 @media (max-width: 576px) {
@@ -115,6 +144,10 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
 .about {
   color: var(--primary-black-);
   background-color: var(--secondry-white-);
+}
+
+.about .container {
+  opacity: 0;
 }
 
 .about h1 {
@@ -153,6 +186,10 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
 .skills {
   color: var(--primary-black-);
   background-color: var(--primary-white-);
+}
+
+.skills .container {
+  opacity: 0;
 }
 
 .skills h1 {
@@ -221,6 +258,10 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   background-color: var(--secondry-white-);
 }
 
+.projects .container {
+  opacity: 0;
+}
+
 .projects h1 {
   width: fit-content;
   color: var(--primary-blue-);
@@ -253,6 +294,10 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
 .contact {
   color: var(--primary-black-);
   background-color: var(--primary-white-);
+}
+
+.contact .container {
+  opacity: 0;
 }
 
 .contact h1 {
@@ -339,6 +384,10 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   background-color: var(--primary-white-);
 }
 
+.thankYou .container {
+  animation: thankSection 1s ease-out forwards;
+}
+
 .thankYou h1 {
   color: var(--primary-blue-);
 }
@@ -365,6 +414,17 @@ header nav.navbar .navbar-nav .nav-item .nav-link.active {
   background-color: var(--primary-blue-);
   color: var(--primary-white-);
   font-weight: 600;
+} 
+
+@keyframes thankSection {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* Contact End */
 
@@ -407,3 +467,34 @@ footer p {
   margin: 0px;
 }
 /* Footer End */
+
+/* ======= Styles for All Sections ======= */
+#skills,
+#landing,
+#about,
+#contact,
+#projects {
+  scroll-margin-top: 59.61px;
+}
+
+@media (max-width: 991px) {
+  #skills,
+  #landing,
+  #about,
+  #contact,
+  #projects {
+    scroll-margin-top: 259.61px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Styles End */
