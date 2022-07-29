@@ -23,3 +23,9 @@ window.addEventListener("scroll", () => {
   }
 });
 // Skills End
+
+// ======= Copyright Section ======= //
+let copyright = document.querySelectorAll(".copyright span");
+let year = new Date().getFullYear();
+copyright.forEach((ele) => (ele.innerHTML = year));
+// Copyright End
